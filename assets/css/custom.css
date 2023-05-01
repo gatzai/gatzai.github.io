@@ -1,0 +1,8 @@
+@font-face {
+    font-family: font;
+    src: url('/fonts/LXGWWenKai-Regular.ttf');
+}
+
+html {
+    font-family: font, 'Noto Serif SC','Noto Serif TC', 'Noto Serif CJK TC', serif;
+}

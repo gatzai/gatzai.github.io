@@ -1,7 +1,7 @@
 +++
 title="《批判性思维》笔记一"
 date=2022-12-06
-updated=2022-12-06
+lastmod=2022-12-06
 in_search_index = true
 
 categories = ["阅读笔记"]

@@ -1,12 +1,10 @@
 +++
 title="Informer学习笔记"
 date=2022-11-30
-updated=2022-11-30
+lastmod=2022-11-30
 in_search_index = true
 categories = ["学习笔记"]
 tags = ["时间序列","深度学习"]
-
-
 +++
 
 针对人群：想深度学习最新方法进行时间序列预测的人

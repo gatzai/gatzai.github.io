@@ -1,7 +1,7 @@
 +++
 title="Ingress Second Sunday - 二月"
 date=2023-02-12
-updated=2023-02-12
+lastmod=2023-02-12
 in_search_index = true
 
 tags = ["ingress"]

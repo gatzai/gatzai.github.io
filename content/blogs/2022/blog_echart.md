@@ -1,7 +1,7 @@
 +++
 title="echart之地图数据可视化"
 date=2022-11-29
-updated=2022-11-29
+lastmod=2022-11-29
 in_search_index = true
 
 categories = ["可视化"]

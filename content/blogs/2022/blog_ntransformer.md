@@ -1,7 +1,7 @@
 +++
 title="非平稳时间序列的预测"
 date=2022-12-09
-updated=2022-12-09
+lastmod=2022-12-09
 in_search_index = true
 
 categories = ["学习笔记"]

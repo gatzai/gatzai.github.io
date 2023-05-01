@@ -59,8 +59,9 @@ def update_date():
 		#print(new_content)
 		with open(updated_file_name, 'w', encoding='utf-8') as f:
 			f.write(new_content)
-
+# 批量替换头部字段
 def replace_head():
+	old_str = "updated"
 	new_str = "lastmod"
 	for root,dirs,files in os.walk(r"..\\content"):
 		for file in files:
@@ -73,7 +74,26 @@ def replace_head():
 			if len(temp) != 3:
 				print('[Warning] File: "{}" no match +++ format. Excepted {}.'.format(fpath, len(temp)-1))
 				continue
-			return
+
+			frontmatter = temp[1]
+			text_content = temp[2]
+			target_index = None
+			items = frontmatter.split('\n')
+
+			# 用换行分隔，找到相应的 index 直接替换即可
+			for (index, item) in enumerate(items):
+				if item.startswith(old_str):
+					target_index = index
+					break
+
+			if target_index is None:
+				continue
+			else:
+				print('[Info] File: "{}" updated!.'.format(fpath))
+				items[target_index] = items[target_index].replace(old_str, new_str)
+
+			new_frontmatter = "\n".join(items)
+			new_content = "+++\n" + new_frontmatter.strip("\n") + "\n+++" + text_content
 			with open(fpath, 'w', encoding='utf-8') as f:
 				f.write(new_content)
 

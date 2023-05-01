@@ -1,7 +1,7 @@
 +++
 title="博客文章排版"
 date=2022-11-30
-updated=2023-02-08
+lastmod=2023-02-08
 in_search_index = true
 
 categories = ["美化"]

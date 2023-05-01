@@ -1,7 +1,7 @@
 +++
 title="Transformer学习笔记"
 date=2023-01-24
-updated=2023-01-24
+lastmod=2023-01-24
 in_search_index = true
 categories = ["学习笔记"]
 tags = ["深度学习"]

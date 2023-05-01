@@ -1,7 +1,7 @@
 +++
 title="Git使用"
 date=2022-11-10
-updated=2023-03-01T10:50:59.000Z
+lastmod=2023-03-01T10:50:59.000Z
 in_search_index = true
 editURL = "https://github.com/silentbluedrop/"
 latex = true

@@ -2,7 +2,7 @@
 in_search_index = true
 title="Pytorch使用"
 date=2022-11-22
-updated=2023-02-17
+lastmod=2023-02-17
 
 [taxonomies]
 categories = ["工具使用"]

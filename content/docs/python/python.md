@@ -2,7 +2,7 @@
 in_search_index = true
 title="Python使用"
 date=2022-11-08
-updated=2023-02-28T23:18:07.000Z
+lastmod=2023-02-28T23:18:07.000Z
 
 [taxonomies]
 categories = ["工具使用"]

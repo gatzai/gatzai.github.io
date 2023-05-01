@@ -1,7 +1,7 @@
 +++
 title="文章模板"
 date=2022-11-30
-updated=2022-12-01
+lastmod=2022-12-01
 in_search_index = true
 
 categories = ["文章"]

@@ -187,6 +187,14 @@ git submodule add <子模块git项目地址> <路径>
 
 (如果有报错存在index，请确保路径的目录是一个新目录)
 
+* 手动更新子模块
+
+有时候子模块过大，不想用命令 `git submodule add`，能否手动添加相应的配置文件呢？
+
+答案是不可能的，参考如下。简单来说就是`.git/index`内容会有变化，无法手动维护。
+
+> https://stackoverflow.com/questions/24777973/adding-git-submodules-automatically-gitmodules
+
 * 子模块更新：
 ```git
 

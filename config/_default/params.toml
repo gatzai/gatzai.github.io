@@ -72,7 +72,8 @@ smartTOCHideUnfocusedChildren = true
   showAuthorsBadges = true
   showWordCount = true
   showSummary = true
-  # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  sharingLinks = [ "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  showComments = true
 
 [list]
   showHero = true

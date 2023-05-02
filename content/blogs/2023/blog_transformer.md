@@ -17,6 +17,7 @@ comments = true
 
 <!-- more -->
 
+{{< katex >}}
 ## 注意力机制
 
 在注意力机制中，通过随意线索query，来选择环境中的不随意线索key以及匹配的value。

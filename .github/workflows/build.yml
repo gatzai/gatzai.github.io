@@ -7,6 +7,12 @@ on:
         # Runs everyday at 8:00 AM
         - cron: "0 0 * * *"
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -24,6 +30,12 @@ jobs:
 
             - name: Build Web
               run: hugo
+
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v1
+              with:
+                path: ./public
+
     deploy:
       environment:
         name: github-pages

@@ -1,8 +1,9 @@
 +++
-title="Hugo 搭建笔记"
+title="Hugo 博客搭建笔记"
+
 date=2023-05-02
 
-tags = ["博客", "日志"]
+tags = ["博客"]
 
 +++
 
@@ -36,7 +37,7 @@ tags = ["博客", "日志"]
 这篇教程[1]的部署方式不太优雅，它需要把构建出来的 build 文件发布到 master 分支上，虽然问题不大，但是看着不爽。
 而之前 `Zola` 部署方式甚是优雅，完全无痕。我就想能否保持 hugo 的构建方式，将部署方式改成 zola的，结果很完美。
 
-Github Action 分两个部分。脚本如下：
+Github Action 分两个部分，分别是在 job 里面的 build 和 deploy。脚本如下：
 ```yaml
 name: Deploy website to Pages
 

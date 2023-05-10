@@ -1,13 +1,8 @@
 @font-face {
-    font-family: lxgw;
-    src: url('/fonts/LXGWWenKai-Regular.ttf');
-}
-
-@font-face {
     font-family: smile;
     src: url('/fonts/SmileySans-Oblique.ttf');
 }
 
 html {
-    font-family: smile, lxgw, 'Noto Serif SC','Noto Serif TC', 'Noto Serif CJK TC', serif;
+    font-family: smile,'Noto Serif SC','Noto Serif TC', 'Noto Serif CJK TC', serif;
 }

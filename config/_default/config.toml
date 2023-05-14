@@ -68,3 +68,10 @@ enableGitInfo = true
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+
+[module]
+[[module.mounts]]
+  source = 'content/300-Resources/vulkan/*'
+  target = 'content/500-Blogs/docs/vulkan/'
+  #excludeFiles = ['500-Blogs/blogs/*']
+  #includeFiles = ['300-Resources/vulkan']

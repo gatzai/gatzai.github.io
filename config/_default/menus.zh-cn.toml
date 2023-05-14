@@ -12,17 +12,17 @@
 
 [[main]]
   name = "博客"
-  pageRef = "blogs"
+  pageRef = "/500-Blogs/blogs"
   weight = 10
 
 [[main]]
   name = "文档"
-  pageRef = "docs"
+  pageRef = "/500-Blogs/docs"
   weight = 10
 
 [[main]]
   name = "友链"
-  pageRef = "flinks"
+  pageRef = "/500-Blogs/flinks"
   weight = 12
 
 #[[main]]

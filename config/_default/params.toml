@@ -12,7 +12,7 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
 
-mainSections = ["blogs", "docs"]
+mainSections = ["500-Blogs", "/docs/python"]
 # robots = ""
 
 disableImageOptimization = true
@@ -38,9 +38,9 @@ smartTOCHideUnfocusedChildren = true
   layout = "background" # valid options: page, profile, hero, card, background, custom
   homepageImage = "img/home_back.jpg" # used in: hero, and card
   showRecent = true
-  showRecentItems = 5
+  showRecentItems = 6
   showMoreLink = true
-  showMoreLinkDest = "/blogs"
+  showMoreLinkDest = "/500-Blogs/blogs/2022/"
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background

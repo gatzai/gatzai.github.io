@@ -1,0 +1,27 @@
+[[socials]]
+    id = "email"
+    url = "mailto:silentbluedrop@gmail.com"
+    icon = "envelope"
+    title = "Email"
+    weight = 2
+
+[[socials]]
+    id = "github"
+    url = "https://github.com/silentbluedrop"
+    icon = "github"
+    title = "GitHub"
+    weight = 3
+
+[[socials]]
+    id = "twitter"
+    url = "https://twitter.com/bluedrop9"
+    icon = "twitter"
+    title = "Twitter"
+    weight = 4
+
+[[socials]]
+    id = "telegram"
+    url = "https://t.me/primalwildness"
+    icon = "telegram"
+    title = "Telegram"
+    weight = 5

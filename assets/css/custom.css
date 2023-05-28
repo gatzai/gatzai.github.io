@@ -1,8 +1,0 @@
-@font-face {
-    font-family: smile;
-    src: url('/fonts/SmileySans-Oblique.ttf');
-}
-
-html {
-    font-family: smile,'Noto Serif SC','Noto Serif TC', 'Noto Serif CJK TC', serif;
-}

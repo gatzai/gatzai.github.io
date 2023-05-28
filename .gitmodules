@@ -1,6 +1,3 @@
-[submodule "themes/blowfish"]
-	path = themes/blowfish
-	url = https://github.com/nunocoracao/blowfish.git
 [submodule "content"]
 	path = content
 	url = https://gitee.com/primal_wildness/knowledge2.0.git

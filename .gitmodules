@@ -2,6 +2,6 @@
 	path = content
 	url = https://gitee.com/primal_wildness/knowledge2.0.git
 	ignore = dirty
-[submodule "themes/meme"]
-	path = themes/meme
-	url = https://github.com/reuixiy/hugo-theme-meme.git
+[submodule "themes/congo"]
+	path = themes/congo
+	url = https://github.com/jpanther/congo.git

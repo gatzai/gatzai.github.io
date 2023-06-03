@@ -6,7 +6,7 @@ displayName = "中文"
 htmlCode = "zh-cn"
 weight = 1
 rtl = false
-title = "桔仔的博客"
+title = "🍊桔仔的博客"
 copyright = "&copy; 2023 Spike"
 
 [params]
@@ -17,15 +17,15 @@ copyright = "&copy; 2023 Spike"
   dateFormat = "2 January 2006"
 
   mainSections = ["500-Blogs"]
-  description = "Spike 的博客"
+  description = "桔仔的博客"
 
 
 # Language-specific parameters go here
 [author]
-  name = "Spike"
+  name = "桔仔"
   image = "/icons/avatar.png"
-  headline = ""
-  bio = "hello"
+  headline = "记录产生美好"
+  bio = "记录产生美好"
   links = [
     { github = "https://github.com/silentbluedrop/" },
     { twitter = "https://twitter.com/bluedrop9" },

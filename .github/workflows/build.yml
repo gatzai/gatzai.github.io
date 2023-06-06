@@ -20,7 +20,9 @@ jobs:
             - uses: actions/checkout@v2
             - name: Pull & update submodules recursively
               run: |
-                git pull --recurse-submodules content
+                cd content/
+                git pull
+                cd ..
                 git submodule update --init --remote --recursive content
             - name: Commit & push changes
               run: |

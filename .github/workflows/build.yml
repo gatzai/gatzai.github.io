@@ -26,8 +26,8 @@ jobs:
                 git submodule update --init --remote --recursive content
             - name: Commit & push changes
               run: |
-                git config --global user.name "spike"
-                git config --global user.email "2899561390@qq.com"
+                #git config --global user.name "spike"
+                #git config --global user.email "2899561390@qq.com"
                 git commit -am "[auto] Update submodules content" || echo "No changes to commit"
             - name: Push Changes
               uses: ad-m/github-push-action@master

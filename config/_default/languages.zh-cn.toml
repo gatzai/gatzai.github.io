@@ -7,7 +7,7 @@ htmlCode = "zh-cn"
 weight = 1
 rtl = false
 title = "🍊桔仔的博客"
-copyright = "&copy; 2023 Spike"
+copyright = "&copy; 2023 桔仔"
 
 [params]
   isoCode = "zh-cn"
@@ -23,10 +23,14 @@ copyright = "&copy; 2023 Spike"
 # Language-specific parameters go here
 [author]
   name = "桔仔"
-  image = "/icons/avatar.png"
+  image = "/imgs/avatar.png"
   headline = "记录产生美好"
   bio = "记录产生美好"
   links = [
     { github = "https://github.com/silentbluedrop/" },
     { twitter = "https://twitter.com/bluedrop9" },
+    { instagram = "https://www.instagram.com/bluedrop8/" },
+    { telegram = "https://t.me/primalwildness"},
+    { itch = "https://itch.io/dashboard"},
+    { email = "2899561390@qq.com"},
   ]

@@ -18,10 +18,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-                with:
-                  repository: silentbluedrop/silentbluedrop.github.io
-                  token: ${{ secrets.PERSONAL_TOKEN }}
-                  submodules: true
+              with:
+                repository: silentbluedrop/silentbluedrop.github.io
+                token: ${{ secrets.PERSONAL_TOKEN }}
+                submodules: true
             - name: Pull & update submodules recursively
               run: |
                 cd content/

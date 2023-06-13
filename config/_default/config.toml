@@ -5,6 +5,7 @@
 theme = "congo"
 defaultContentLanguage = "zh-cn"
 baseURL = "https://silentbluedrop.github.io/"
+hasCJKLanguage = true
 
 enableRobotsTXT = true
 paginate = 10

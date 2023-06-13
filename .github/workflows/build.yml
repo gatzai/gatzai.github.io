@@ -19,7 +19,7 @@ jobs:
         steps:
             - uses: actions/checkout@v2
               with:
-                repository: silentbluedrop/silentbluedrop.github.io
+                repository: gatzai/gatzai.github.io
                 token: ${{ secrets.PERSONAL_TOKEN }}
                 submodules: true
             - name: Pull & update submodules recursively

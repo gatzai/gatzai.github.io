@@ -7,7 +7,7 @@ htmlCode = "zh-cn"
 weight = 1
 rtl = false
 title = "🍊桔仔的博客"
-copyright = "&copy; 2023 桔仔"
+copyright = "&copy; 2024 桔仔"
 
 [params]
   isoCode = "zh-cn"

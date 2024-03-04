@@ -2,14 +2,12 @@
 
 languageCode = "zh-cn"
 languageName = "Chinese-Simplified"
-displayName = "中文"
-htmlCode = "zh-cn"
 weight = 1
-rtl = false
 title = "🍊桔仔的博客"
 copyright = "&copy; 2024 桔仔"
 
-[params]
+[languages.zh-cn.params]
+  htmlCode = "zh-cn"
   isoCode = "zh-cn"
   displayName = "中文"
   rtl = false
@@ -21,7 +19,7 @@ copyright = "&copy; 2024 桔仔"
 
 
 # Language-specific parameters go here
-[author]
+[params.author]
   name = " 桔仔  • GatZai"
   image = "/imgs/avatar.png"
   headline = "记录产生美好"

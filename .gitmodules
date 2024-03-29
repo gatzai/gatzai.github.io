@@ -4,4 +4,4 @@
 	ignore = dirty
 [submodule "themes/congo"]
 	path = themes/congo
-	url = https://github.com/jpanther/congo.git
+	url = https://github.com/gatzai/congo_gz.git

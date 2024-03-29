@@ -14,6 +14,7 @@ enableCodeCopy = true
 
 # robots = ""
 fingerprintAlgorithm = "sha256"
+mainSections = ["500-blogs"]
 
 [params]
   latex = false

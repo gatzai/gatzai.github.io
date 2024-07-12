@@ -17,7 +17,7 @@ jobs:
     sync-submodule:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4
               with:
                 repository: gatzai/gatzai.github.io
                 token: ${{ secrets.PERSONAL_TOKEN }}
@@ -36,7 +36,7 @@ jobs:
         needs: sync-submodule
         steps:
             - name: Checkout
-              uses: actions/checkout@v2
+              uses: actions/checkout@v4
               with:
                   submodules: true
                   fetch-depth: 0

@@ -4,7 +4,7 @@ languageCode = "zh-cn"
 languageName = "Chinese-Simplified"
 weight = 1
 title = "🍊桔仔的博客"
-copyright = "&copy; 2024 桔仔"
+copyright = "&copy; 2025 桔仔"
 
 [languages.zh-cn.params]
   htmlCode = "zh-cn"
@@ -27,7 +27,7 @@ copyright = "&copy; 2024 桔仔"
     { github = "https://github.com/gatzai/" },
     { twitter = "https://twitter.com/bluedrop9" },
     { instagram = "https://www.instagram.com/bluedrop8/" },
-    { telegram = "https://t.me/primalwildness"},
+    { telegram = "https://t.me/gatzai"},
     { itch = "https://itch.io/dashboard"},
     { email = "2899561390@qq.com"},
   ]

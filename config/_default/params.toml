@@ -75,7 +75,7 @@
   enableCounts = true  # Note: only works if waline or twikoo is enabled.
   [comment.waline]
     enable = true
-    serverURL = "https://9ujhqoqg.api.lncldglobal.com"
+    serverURL = "https://gatzai-comment.vercel.app/"
     lang = "zh-hans"
     reaction = true
     search = true

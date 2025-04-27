@@ -1,0 +1,12 @@
+node_modules/
+public/
+resources/
+hugo_stats.json
+package-lock.json
+package.hugo.json
+package.json
+go.sum
+.hugo_build.lock
+.idea
+*.DS_Store
+

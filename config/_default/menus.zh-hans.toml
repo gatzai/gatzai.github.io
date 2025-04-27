@@ -1,0 +1,30 @@
+[[main]]
+  name = "博客"
+  pageRef = "/500-Blogs/blogs"
+  weight = 10
+
+[[main]]
+  name = "文档"
+  pageRef = "/500-Blogs/docs"
+  weight = 20
+
+[[main]]
+  name = "归档"
+  pageRef = "/500-Blogs/archive"
+  weight = 30
+
+[[main]]
+  name = "其他"
+  weight = 40
+[[main]]
+  identifier = "project"
+  name = "项目"
+  pageRef = "goods"
+  parent = '其他'
+  weight = 10
+[[main]]
+  identifier = "test"
+  name = "友链"
+  pageRef = "flink"
+  parent = '其他'
+  weight = 20

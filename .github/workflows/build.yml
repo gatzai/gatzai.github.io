@@ -1,0 +1,82 @@
+name: Deploy website to Pages
+
+on:
+    push:
+    workflow_dispatch:
+    schedule:
+        # crontab 定时执行，每六小时一次
+        - cron: "0 /6 * * *"
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+    # 同步子模块内容，获取最新的博客内容
+    sync-submodule:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                repository: gatzai/gatzai.github.io
+                token: ${{ secrets.PERSONAL_TOKEN }}
+                submodules: true
+            - name: Pull & update submodules recursively
+              run: |
+                git pull --recurse-submodules
+                git submodule update --remote --recursive
+            - name: Commit & push changes
+              run: |
+                git config --global user.name "Git bot"
+                git config --global user.email "bot@noreply.github.com"
+                git commit -am "[auto] Update submodules content" && git push || echo "No changes to commit"
+    # 构建博客页面
+    build:
+        runs-on: ubuntu-latest
+        needs: sync-submodule
+        steps:
+            # 拉取主仓库内容
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  submodules: true
+                  fetch-depth: 0
+
+            # 初始化 hugo 和 nodejs   
+            - name: Setup Node
+              uses: actions/setup-node@v4.4.0
+
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v3.0.0
+              with:
+                  hugo-version: "latest"
+                  extended: true
+ 
+            # 使用 hugo 和 npm 命令生成网页内容
+            - name: Init Dependency
+              run: hugo mod npm pack
+
+            - name: Install Dependency
+              run: npm install
+
+            - name: Build Web
+              run: hugo
+						
+            # 将生成的网页提交到 github 的页面上
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v3
+              with:
+                path: ./public
+    # 部署博客
+    deploy:
+      environment:
+        name: github-pages
+        url: ${{ steps.deployment.outputs.page_url }}
+      runs-on: ubuntu-latest
+      needs: build
+      steps:
+        - name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@v4

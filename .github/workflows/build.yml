@@ -63,7 +63,7 @@ jobs:
 
             - name: Build Web
               run: hugo
-						
+
             # 将生成的网页提交到 github 的页面上
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3

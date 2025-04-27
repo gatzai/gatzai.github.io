@@ -72,9 +72,10 @@
               </div>
               <a
                 href="{{ $post.Permalink }}"
-                class="hs-content-title text-4xl font-bold group-hover:text-[--hs-text-color-hover] dark:text-gray-300"
-                >{{ $post.Title }}</a
-              >
+                class="group transition duration-200 hs-content-title text-4xl font-bold group-hover:text-sky-600 dark:text-gray-300"
+                >{{ $post.Title }}
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-stone-300"></span>
+              </a>
               <div
                 class="h-60 w-full"
                 x-intersect.threshold.70="isLoaded = true;">

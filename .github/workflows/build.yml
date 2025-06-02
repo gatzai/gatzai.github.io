@@ -4,8 +4,8 @@ on:
     push:
     workflow_dispatch:
     schedule:
-        # crontab 定时执行，每六小时一次
-        - cron: "0 */6 * * *"
+        # crontab 定时执行，暂停，设置到每年一月执行
+        - cron: "0 0 0 1 *"
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:

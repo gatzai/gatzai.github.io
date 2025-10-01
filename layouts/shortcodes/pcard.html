@@ -1,0 +1,39 @@
+{{- $name := .Get "name" -}}
+{{- $url := .Get "url" -}}
+{{- $icon := .Get "icon" -}}
+{{ $unique_id := substr (md5 $url) 0 16 }}
+{{- $description := .Get "description" -}}
+
+
+
+<div id="{{$unique_id}}" href="#" class="flex flex-col p-4 border-gray-800 shadow-md rounded-2xl cursor-pointer hover:bg-gray-100 mb-4">
+    <div class="flex items-center justify-between">
+        <div class="flex items-center mr-auto">
+        <div class="inline-flex">
+            <img class="size-16 shadow-xl rounded-md" alt="" src="{{$icon}}" />
+        </div>
+
+        <div class="flex p-4 flex-col ml-3 min-w-0">
+            <div class="font-medium text-2xl leading-none ">{{$name}}</div>
+            <p class="text-sm text-gray-500 leading-none mt-1 truncate">{{$description}}</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function getFavicon() {
+        const links = document.head.querySelectorAll('link[rel="icon"]');
+        if (links.length > 0) {
+            return links[0].href;
+        } else {
+            return null;
+        }
+    }
+    var btn=document.getElementById("{{$unique_id}}");
+    btn.onclick=function(){
+        //window.location.href = "{{$url}}";
+        window.open('{{$url}}', '_blank');
+    }
+    //console.log(getFavicon());
+</script>

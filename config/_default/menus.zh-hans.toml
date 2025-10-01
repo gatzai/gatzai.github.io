@@ -19,12 +19,12 @@
 [[main]]
   identifier = "project"
   name = "项目"
-  pageRef = "goods"
+  pageRef = "projects"
   parent = '其他'
   weight = 10
 [[main]]
-  identifier = "test"
+  identifier = "friendslink"
   name = "友链"
-  pageRef = "flink"
+  pageRef = "friendslink"
   parent = '其他'
   weight = 20

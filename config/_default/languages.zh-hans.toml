@@ -7,3 +7,26 @@ weight = 1
   description = "一款简洁、漂亮的 HUGO 博客主题"
   omitCategoryOnMenu = true
   categoryName = "分类"
+  [params.profile]
+    name = "Gatzai"
+    location = "长沙, 中国"
+    description = "独立游戏开发者，Ingress玩家，爬山徒步爱好者，桌游爱好者，无法抗拒自然旅行文学，喜欢玩吉他的菜狗"
+  [params.socials]
+    [params.socials.github]
+      gatkit = "fa-github"
+      url = "https://github.com/gatzai/gatzai.github.io"
+    [params.socials.twitter]
+      gatkit = "fa-x-twitter"
+      url = "https://x.com/bluedrop9"
+    [params.socials.instagram]
+      gatkit = "fa-instagram"
+      url = "https://www.instagram.com/bluedrop8/"
+    [params.socials.itchio]
+      gatkit = "fa-itch-io"
+      url = "https://silentbluedrop.itch.io/"
+    [params.socials.gitee]
+      gatkit = "fa-square-git"
+      url = "https://gitee.com/primal_wildness"
+    [params.socials.steam]
+      gatkit = "fa-steam"
+      url = "https://steamcommunity.com/profiles/76561198209363303/"

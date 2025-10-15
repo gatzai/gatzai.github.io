@@ -28,3 +28,8 @@
   pageRef = "friendslink"
   parent = '其他'
   weight = 20
+
+[[main]]
+  name = "关于我"
+  pageRef = "/500-Blogs"
+  weight = 50
